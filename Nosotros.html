@@ -2,28 +2,27 @@
 <html lang="es">
   <head>
     <style>
-      
       #introCarousel,
       .carousel-inner,
       .carousel-item,
       .carousel-item.active {
         height: 100vh;
       }
-  
+
       .carousel-item:nth-child(1) {
-        background-image: url("images/Backgrounds/Background-2.jpg");
+        background-image: url("images/Backgrounds/Background-5.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
       }
-  
+
       .carousel-item:nth-child(2) {
         background-image: url("images/Backgrounds/Background-3.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
       }
-  
+
       .carousel-item:nth-child(3) {
         background-image: url("images/Backgrounds/Background-4.jpg");
         background-repeat: no-repeat;
@@ -38,13 +37,12 @@
         background-position: center center;
       }
 
-      /* Height for devices larger than 576px */
       @media (min-width: 1000px) {
         #introCarousel {
           margin-top: -0px;
         }
       }
-  
+
       .navbar .nav-link {
         color: #fff !important;
       }
@@ -55,161 +53,99 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Shibuya Restaurant</title>
-    <!-- Bootstrap -->
-    <!--link href="css/bootstrap-4.4.1.css" rel="stylesheet" /-->
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
-    <!-- CSS Estilos -->
-    <!--link rel="stylesheet" href="css/estilos.css"-->
   </head>
   <body>
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- Carousel wrapper -->
-<div
-id="introCarousel"
-class="carousel slide carousel-fade shadow-2-strong"
-data-mdb-ride="carousel"
->
-<!-- Indicators -->
-<ol class="carousel-indicators">
-  <li
-    data-mdb-target="#introCarousel"
-    data-mdb-slide-to="0"
-    class="active"
-  ></li>
-  <li data-mdb-target="#introCarousel" data-mdb-slide-to="1"></li>
-  <li data-mdb-target="#introCarousel" data-mdb-slide-to="2"></li>
-</ol>
-
-<!-- Inner -->
-<div class="carousel-inner">
-  <!-- Single item -->
-  <div class="carousel-item active">
-      <div class="d-flex justify-content-center align-items-center h-100">
-        <div class="text-white text-center">
-          
-          <img
-          src="images/Logos/Shibuya inverted -since.png"
-          class="img-fluid"
-          width="250"
-          height="243"
-        />
-      
-          <h1 class="mb-3">Shibuya sushi restaurant</h1>
-          <h5 class="mb-4">Since 2022</h5>
-          <a
-            class="btn btn-outline-light btn-lg m-2"
-            href="Menu.html"
-            role="button"
-            rel="nofollow"
-            target="_blank"
-            >Inicio</a
-          >
-          <a
-            class="btn btn-outline-light btn-lg m-2"
-            href="https://mdbootstrap.com/docs/standard/"
-            target="_blank"
-            role="button"
-            >Menú</a
-          >
-        </div>
-      <!--/div-->
-    </div>
-  </div>
-
-
-
-<!-- Controls -->
-<a
-  class="carousel-control-prev"
-  href="#introCarousel"
-  role="button"
-  data-mdb-slide="prev"
->
-  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-  <span class="sr-only">Anterior</span>
-</a>
-<a
-  class="carousel-control-next"
-  href="#introCarousel"
-  role="button"
-  data-mdb-slide="next"
->
-  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-  <span class="sr-only">Siguiente</span>
-</a>
-</div>
-<!-- Carousel wrapper -->
-</header>
-<!--Main Navigation-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-    <hr />
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 offset-md-2">
-          <h2 class="text-center">Contáctanos</h2>
-          <address>
-            <div class="col-md-8 offset-md-2">
-              <strong>Shibuya Sushi Co.</strong><br />
-              Centro Comercial 2001, Cd. Satélite, Méx.<br />
-              ZAC, MX<br />
-              <abbr title="Phone">Tel:</abbr> (492) 224-1409
+    <div
+      id="introCarousel"
+      class="carousel slide carousel-fade shadow-2-strong"
+      data-mdb-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="text-white text-center">
+              <h1 class="mb-4">"Cualquiera puede cocinar"</h1>
+              <h5 class="mb-4">
+                Somos un negocio emergente con la talla de un restaurante 5
+                estrellas, buscando deleitar el paladar de todo aquel que pruebe
+                alguno de sus platillos.
+              </h5>
+              <h5 class="mb-4">
+                Don José es un pensionado, conocido por sus grandes habilidades
+                y su gran pasión por la cocina. Anteriormente ha tenido la
+                oportunidad de ser instruido por Gordon Ramsay, un chef de talla
+                internacional, su primer gran platillo lo realizó cuando aún
+                trajaba, sin embargo eso hoy en día no le impidió llegar a
+                completar su gran sueño de abrir un restaurante.
+              </h5>
+              <a
+                class="btn btn-outline-light btn-lg m-2"
+                href="Shibuya_main.html"
+                role="button"
+                rel="first"
+                target="_self"
+                >Inicio</a
+              >
+              <a
+                class="btn btn-outline-light btn-lg m-2"
+                href="Menu.html"
+                target="_self"
+                role="button"
+                rel="next"
+                >Menú</a
+              >
             </div>
-          </address>
+          </div>
         </div>
       </div>
+
+      <hr />
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 offset-md-2">
+            <h2 class="text-center">Contáctanos</h2>
+            <address>
+              <div class="col-md-8 offset-md-2">
+                <strong>Shibuya Sushi Co.</strong><br />
+                Centro Comercial 2001, Cd. Satélite, Méx.<br />
+                ZAC, MX<br />
+                <abbr title="Phone">Tel:</abbr> (492) 224-1409
+              </div>
+            </address>
+          </div>
+        </div>
+      </div>
+      <hr />
+
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+      />
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      />
+      <script
+        type="text/javascript"
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      ></script>
+      <script
+        type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+      ></script>
+      <script
+        type="text/javascript"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+      ></script>
     </div>
-    <hr />
-    
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>     
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-
-    
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <!--script src="js/jquery-3.4.1.min.js"></script>
-    < Include all compiled plugins (below), or include individual files as needed >
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap-4.4.1.js"></script>
-    <script src="js/main.js"></script-->
   </body>
 </html>
