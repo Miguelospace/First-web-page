@@ -2,61 +2,36 @@
 <html lang="es">
   <head>
     <style>
-      
       #introCarousel,
       .carousel-inner,
       .carousel-item,
       .carousel-item.active {
         height: 100vh;
       }
-  
+
       .carousel-item:nth-child(1) {
         background-image: url("images/Backgrounds/Background-3.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
       }
-  
-      .carousel-item:nth-child(2) {
-        background-image: url("images/Backgrounds/Background-3.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-      }
-  
-      .carousel-item:nth-child(3) {
-        background-image: url("images/Backgrounds/Background-4.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-      }
 
-      .carousel-item:nth-child(4) {
-        background-image: url("images/Backgrounds/Background-5.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-      }
-
-      /* Height for devices larger than 576px */
       @media (min-width: 1000px) {
         #introCarousel {
           margin-top: -0px;
         }
       }
-  
+
       .navbar .nav-link {
         color: #fff !important;
       }
     </style>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Shibuya Restaurant</title>
-    <!-- Bootstrap -->
-    <!--link href="css/bootstrap-4.4.1.css" rel="stylesheet" /-->
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -64,361 +39,287 @@
       crossorigin="anonymous"
     />
     <!-- CSS Estilos -->
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estilos.css" />
   </head>
   <body>
-    
+    <!-- Carousel wrapper -->
+    <div
+      id="introCarousel"
+      class="carousel slide carousel-fade shadow-2-strong"
+      data-mdb-ride="carousel"
+    >
+      <!-- Inner -->
+      <div class="carousel-inner">
+        <!-- Single item -->
+        <div class="carousel-item active">
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="text-white text-center">
+              <img
+                src="images/Logos/Shibuya inverted -since.png"
+                class="img-fluid"
+                width="250"
+                height="243"
+              />
 
-    <!--Navbar>
-    
-    <div id="mainNavigation">
-      <nav role="navigation">
-        <div class="py-3 text-center border-bottom mb-4">
-          <img src="images/Logos/ban.png" width="150"
-          height="143"alt="" class="invert">
-        </div>
-      </nav>
-      <div class="navbar-expand-md">
-        <div class="navbar-dark text-center my-2">
-          <button class="navbar-toggler w-75" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span> <span class="align-middle">Menu</span>
-          </button>
-        </div>
-        <div class="text-center mt-3 collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav mx-auto ">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-            </li>
-      
-            <li class="nav-item">
-              <a class="nav-link" href="#">Menu</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Nosotros</a>
-            </li>
-            
-              
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="#">Inicio</a></li>
-                <li><a class="dropdown-item" href="#">Menu</a></li>
-                <li><a class="dropdown-item" href="#">Nosotros</a></li>
-              </ul>
-            </li>
-            
-          </ul>
+              <h1 class="mb-3">Shibuya sushi restaurant</h1>
+              <h5 class="mb-4">Since 2022</h5>
+              <a
+                class="btn btn-outline-light btn-lg m-2"
+                href="Shibuya_main.html"
+                role="button"
+                rel="nofollow"
+                target="_self"
+                >Inicio</a
+              >
+              <a
+                class="btn btn-outline-light btn-lg m-2"
+                href="Nosotros.html"
+                target="_self"
+                role="button"
+                >Nosotros</a
+              >
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <Navbar fin-->
 
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- Carousel wrapper -->
-<div
-id="introCarousel"
-class="carousel slide carousel-fade shadow-2-strong"
-data-mdb-ride="carousel"
->
-<!-- Indicators -->
-<ol class="carousel-indicators">
-  <li
-    data-mdb-target="#introCarousel"
-    data-mdb-slide-to="0"
-    class="active"
-  ></li>
-  <li data-mdb-target="#introCarousel" data-mdb-slide-to="1"></li>
-  <li data-mdb-target="#introCarousel" data-mdb-slide-to="2"></li>
-</ol>
-
-<!-- Inner -->
-<div class="carousel-inner">
-  <!-- Single item -->
-  <div class="carousel-item active">
-      <div class="d-flex justify-content-center align-items-center h-100">
-        <div class="text-white text-center">
-          
-          <img
-          src="images/Logos/Shibuya inverted -since.png"
-          class="img-fluid"
-          width="250"
-          height="243"
-        />
-      
-          <h1 class="mb-3">Shibuya sushi restaurant</h1>
-          <h5 class="mb-4">Since 2022</h5>
-          <a
-            class="btn btn-outline-light btn-lg m-2"
-            href="Shibuya_main.html"
-            role="button"
-            rel="nofollow"
-            target="_self"
-            >Inicio</a
-          >
-          <a
-            class="btn btn-outline-light btn-lg m-2"
-            href="Nosotros.html"
-            target="_self"
-            role="button"
-            >Nosotros</a
-          >
-        </div>
-      <!--/div-->
-    </div>
-  </div>
-
-
-
-<!-- Controls -->
-<a
-  class="carousel-control-prev"
-  href="#introCarousel"
-  role="button"
-  data-mdb-slide="prev"
->
-  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-  <span class="sr-only">Anterior</span>
-</a>
-<a
-  class="carousel-control-next"
-  href="#introCarousel"
-  role="button"
-  data-mdb-slide="next"
->
-  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-  <span class="sr-only">Siguiente</span>
-</a>
-</div>
-<!-- Carousel wrapper -->
-</header>
-<!--Main Navigation-->
-
-<!--Main layout-->
-<main class="mt-5">
-<div class="container">
-<!--Section: Content-->
-<section>
-  <div class="row">
-    <div class="col-md-3 gx-5 mb-4">
-      <div
-        class="bg-image hover-overlay ripple shadow-2-strong rounded-5"
-        data-mdb-ripple-color="light"
-      >
-        
-        <a href="#!">
-          <div
-            class="mask"
-            style="background-color: rgba(251, 251, 251, 0.15)"
-          ></div>
-        </a>
-      </div>
-    </div>
-    
-    <div class="text-center col-md-6 gx-auto mb-4">
-      <h1><strong>Nuestro menú</strong></h1>
-      <p class="text-center">
-        
-      </p>
-      
-    
-  </div>
-  </div>
-</section>
-
-
-
-
-<section class="text-center">
-    <h4 class="mb-5"><strong>Entradas</strong></h4>
-    <div class="col-lg-6">
-    <div class="row">
-        <div class="container d-flex align-items-center justify-content-center position-relative flex-wrap mb-3 mb-lg-0">
-            <div class="card d-flex position-relative flex-column">
-                <div class='imgContainer'>
-                    <img src='images/Alimentos/Platillos/Entrada3.jpg'>
-                </div>
-                
-                <div class="content">
-                    <h2>Tempura 天ぷら</h2>
-                    <p>Este auténtico sushi japonés es la recomendación de la casa.</p>
-                    <a href="#!" class="btn btn-primary">Comprar</a>
-                </div>
-            </div>
-            <div class="card d-flex position-relative flex-column">
-                <div class='imgContainer'>
-                    <img src='images/Alimentos/Platillos/Entrada5.jpg'>
-                </div>
-                <div class="content">
-                    <h2>Nigiri にぎり</h2>
-                    <p>Este platillo está conformado por atún y arroz, a los japoneses les encanta.</p>
-                    <a href="#!" class="btn btn-primary">Comprar</a>
-                </div>
-            </div>
-            <div class="card d-flex position-relative flex-column">
-                <div class='imgContainer'>
-                    <img src='images/Alimentos/Platillos/Entrada6.jpg'>
-                </div>
-                <div class="content">
-                    <h2>Yabubasa やぶばさ</h2>
-                    <p>Similar al sushi de atún, pero añadiendo carnes rojas a su exquisito sabor.</p>
-                    <a href="#!" class="btn btn-primary">Comprar</a>
-                </div>
-            </div>
-            <div class="card d-flex position-relative flex-column">
-                <div class='imgContainer'>
-                    <img src='images/Alimentos/Platillos/Entrada1.jpg'>
-                </div>
-                <div class="content">
-                    <h2>Tsuna ツナ</h2>
-                    <p>La gran creación de uno de los chefs más reconocidos de todo oriente.</p>
-                    <a href="#!" class="btn btn-primary">Comprar</a>
-                </div>
-            </div>
-        </div>
-    </div>
-     
-    <section class="text-center">
-        <h4 class="mb-5"><strong>Platillos fuertes</strong></h4>
-        <div class="col-lg-6">
-        <div class="row">
-            <div class="container d-flex align-items-center justify-content-center position-relative flex-wrap mb-3 mb-lg-0">
-                <div class="card d-flex position-relative flex-column">
-                    <div class='imgContainer'>
-                        <img src='images/Alimentos/Platillos/Fuerte1.jpg'>
-                    </div>
-                    
-                    <div class="content">
-                        <h2>Rōsutokaeru ローストカエル</h2>
-                        <p>Ancas de rana adobadas con especias orientales acompañadas de fideo.</p>
-                        <a href="#!" class="btn btn-primary">Comprar</a>
-                    </div>
-                </div>
-                <div class="card d-flex position-relative flex-column">
-                    <div class='imgContainer'>
-                        <img src='images/Alimentos/Platillos/Fuerte2.jpg'>
-                    </div>
-                    <div class="content">
-                        <h2>Yu de tamago ゆで卵</h2>
-                        <p>Una deliciosa cabeza de pulpo con un toque de huevo curtido en vinagre.</p>
-                        <a href="#!" class="btn btn-primary">Comprar</a>
-                    </div>
-                </div>
-                <div class="card d-flex position-relative flex-column">
-                    <div class='imgContainer'>
-                        <img src='images/Alimentos/Platillos/Fuerte3.jpg'>
-                    </div>
-                    <div class="content">
-                        <h2>Kani no shichū カニのシチュー</h2>
-                        <p>Similar al pozole, pero en versión japonesa.</p>
-                        <a href="#!" class="btn btn-primary">Comprar</a>
-                    </div>
-                </div>
-                <div class="card d-flex position-relative flex-column">
-                    <div class='imgContainer'>
-                        <img src='images/Alimentos/Platillos/Fuerte5.jpg'>
-                    </div>
-                    <div class="content">
-                        <h2>Chō supaishī 超スパイシー</h2>
-                        <p>El ramen ideal para los mexicanos, por picoso.</p>
-                        <a href="#!" class="btn btn-primary">Comprar</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-       
-  
-        <section class="text-center">
-            <h4 class="mb-5"><strong>Bebidas (Cervezas)</strong></h4>
-            <div class="col-lg-6">
+      <!--Main layout-->
+      <main class="mt-5">
+        <div class="container">
+          <!--Section: Content-->
+          <section>
             <div class="row">
-                <div class="container d-flex align-items-center justify-content-center position-relative flex-wrap mb-3 mb-lg-0">
-                    <div class="card d-flex position-relative flex-column">
-                        <div class='imgContainer'>
-                            <img src='images/Alimentos/Bebidas/Beer1.jpg'>
-                        </div>
-                        
-                        <div class="content">
-                            <h2>Sapporo 札幌</h2>
-                            <p>Discover the remarkable, where east meets west.</p>
-                            <a href="#!" class="btn btn-primary">Comprar</a>
-                        </div>
-                    </div>
-                    <div class="card d-flex position-relative flex-column">
-                        <div class='imgContainer'>
-                            <img src='images/Alimentos/Bebidas/Beer2.jpg'>
-                        </div>
-                        <div class="content">
-                            <h2>Asahi アサヒ</h2>
-                            <p>Descubre el sabor crujiente y seco de Karakuchi.</p>
-                            <a href="#!" class="btn btn-primary">Comprar</a>
-                        </div>
-                    </div>
-                    <div class="card d-flex position-relative flex-column">
-                        <div class='imgContainer'>
-                            <img src='images/Alimentos/Bebidas/Beer3.jpg'>
-                        </div>
-                        <div class="content">
-                            <h2>Kirin キリン</h2>
-                            <p>Explore enjoyment.</p>
-                            <a href="#!" class="btn btn-primary">Comprar</a>
-                        </div>
-                    </div>
-                    <div class="card d-flex position-relative flex-column">
-                        <div class='imgContainer'>
-                            <img src='images/Alimentos/Bebidas/Beer4.jpg'>
-                        </div>
-                        <div class="content">
-                            <h2>Nicotto ニコット</h2>
-                            <p>A beer made with Sorachi, a hop from Japan.</p>
-                            <a href="#!" class="btn btn-primary">Comprar</a>
-                        </div>
-                    </div>
+              <div class="col-md-3 gx-5 mb-4">
+                <div
+                  class="bg-image hover-overlay ripple shadow-2-strong rounded-5"
+                  data-mdb-ripple-color="light"
+                >
+                  <a href="#!">
+                    <div
+                      class="mask"
+                      style="background-color: rgba(251, 251, 251, 0.15)"
+                    ></div>
+                  </a>
                 </div>
+              </div>
+
+              <div class="text-center col-md-6 gx-auto mb-4">
+                <h1><strong>Nuestro menú</strong></h1>
+                <p class="text-center"></p>
+              </div>
             </div>
-  
+          </section>
 
+          <section class="text-center">
+            <h4 class="mb-5"><strong>Entradas</strong></h4>
+            <div class="col-lg-6">
+              <div class="row">
+                <div
+                  class="container d-flex align-items-center justify-content-center position-relative flex-wrap mb-3 mb-lg-0"
+                >
+                  <div class="card d-flex position-relative flex-column">
+                    <div class="imgContainer">
+                      <img src="images/Alimentos/Platillos/Entrada3.jpg" />
+                    </div>
 
+                    <div class="content">
+                      <h2>Tempura 天ぷら</h2>
+                      <p>
+                        Este auténtico sushi japonés es la recomendación de la
+                        casa.
+                      </p>
+                      <a href="#!" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+                  <div class="card d-flex position-relative flex-column">
+                    <div class="imgContainer">
+                      <img src="images/Alimentos/Platillos/Entrada5.jpg" />
+                    </div>
+                    <div class="content">
+                      <h2>Nigiri にぎり</h2>
+                      <p>
+                        Este platillo está conformado por atún y arroz, a los
+                        japoneses les encanta.
+                      </p>
+                      <a href="#!" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+                  <div class="card d-flex position-relative flex-column">
+                    <div class="imgContainer">
+                      <img src="images/Alimentos/Platillos/Entrada6.jpg" />
+                    </div>
+                    <div class="content">
+                      <h2>Yabubasa やぶばさ</h2>
+                      <p>
+                        Similar al sushi de atún, pero añadiendo carnes rojas a
+                        su exquisito sabor.
+                      </p>
+                      <a href="#!" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+                  <div class="card d-flex position-relative flex-column">
+                    <div class="imgContainer">
+                      <img src="images/Alimentos/Platillos/Entrada1.jpg" />
+                    </div>
+                    <div class="content">
+                      <h2>Tsuna ツナ</h2>
+                      <p>
+                        La gran creación de uno de los chefs más reconocidos de
+                        todo oriente.
+                      </p>
+                      <a href="#!" class="btn btn-primary">Comprar</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
+              <section class="text-center">
+                <h4 class="mb-5"><strong>Platillos fuertes</strong></h4>
+                <div class="col-lg-6">
+                  <div class="row">
+                    <div
+                      class="container d-flex align-items-center justify-content-center position-relative flex-wrap mb-3 mb-lg-0"
+                    >
+                      <div class="card d-flex position-relative flex-column">
+                        <div class="imgContainer">
+                          <img src="images/Alimentos/Platillos/Fuerte1.jpg" />
+                        </div>
 
+                        <div class="content">
+                          <h2>Rōsutokaeru ローストカエル</h2>
+                          <p>
+                            Ancas de rana adobadas con especias orientales
+                            acompañadas de fideo.
+                          </p>
+                          <a href="#!" class="btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+                      <div class="card d-flex position-relative flex-column">
+                        <div class="imgContainer">
+                          <img src="images/Alimentos/Platillos/Fuerte2.jpg" />
+                        </div>
+                        <div class="content">
+                          <h2>Yu de tamago ゆで卵</h2>
+                          <p>
+                            Una deliciosa cabeza de pulpo con un toque de huevo
+                            curtido en vinagre.
+                          </p>
+                          <a href="#!" class="btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+                      <div class="card d-flex position-relative flex-column">
+                        <div class="imgContainer">
+                          <img src="images/Alimentos/Platillos/Fuerte3.jpg" />
+                        </div>
+                        <div class="content">
+                          <h2>Kani no shichū カニのシチュー</h2>
+                          <p>Similar al pozole, pero en versión japonesa.</p>
+                          <a href="#!" class="btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+                      <div class="card d-flex position-relative flex-column">
+                        <div class="imgContainer">
+                          <img src="images/Alimentos/Platillos/Fuerte5.jpg" />
+                        </div>
+                        <div class="content">
+                          <h2>Chō supaishī 超スパイシー</h2>
+                          <p>El ramen ideal para los mexicanos, por picoso.</p>
+                          <a href="#!" class="btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
 
+                  <section class="text-center">
+                    <h4 class="mb-5"><strong>Bebidas (Cervezas)</strong></h4>
+                    <div class="col-lg-6">
+                      <div class="row">
+                        <div
+                          class="container d-flex align-items-center justify-content-center position-relative flex-wrap mb-3 mb-lg-0"
+                        >
+                          <div
+                            class="card d-flex position-relative flex-column"
+                          >
+                            <div class="imgContainer">
+                              <img src="images/Alimentos/Bebidas/Beer1.jpg" />
+                            </div>
 
+                            <div class="content">
+                              <h2>Sapporo 札幌</h2>
+                              <p>
+                                Discover the remarkable, where east meets west.
+                              </p>
+                              <a href="#!" class="btn btn-primary">Comprar</a>
+                            </div>
+                          </div>
+                          <div
+                            class="card d-flex position-relative flex-column"
+                          >
+                            <div class="imgContainer">
+                              <img src="images/Alimentos/Bebidas/Beer2.jpg" />
+                            </div>
+                            <div class="content">
+                              <h2>Asahi アサヒ</h2>
+                              <p>
+                                Descubre el sabor crujiente y seco de Karakuchi.
+                              </p>
+                              <a href="#!" class="btn btn-primary">Comprar</a>
+                            </div>
+                          </div>
+                          <div
+                            class="card d-flex position-relative flex-column"
+                          >
+                            <div class="imgContainer">
+                              <img src="images/Alimentos/Bebidas/Beer3.jpg" />
+                            </div>
+                            <div class="content">
+                              <h2>Kirin キリン</h2>
+                              <p>Explore enjoyment.</p>
+                              <a href="#!" class="btn btn-primary">Comprar</a>
+                            </div>
+                          </div>
+                          <div
+                            class="card d-flex position-relative flex-column"
+                          >
+                            <div class="imgContainer">
+                              <img src="images/Alimentos/Bebidas/Beer4.jpg" />
+                            </div>
+                            <div class="content">
+                              <h2>Nicotto ニコット</h2>
+                              <p>A beer made with Sorachi, a hop from Japan.</p>
+                              <a href="#!" class="btn btn-primary">Comprar</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
 
+                      <hr />
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-md-8 offset-md-2">
+                            <h2 class="text-center">Contáctanos</h2>
+                            <address>
+                              <div class="col-md-8 offset-md-2">
+                                <strong>Shibuya Sushi Co.</strong><br />
+                                Centro Comercial 2001, Cd. Satélite, Méx.<br />
+                                ZAC, MX<br />
+                                <abbr title="Phone">Tel:</abbr> (492) 224-1409
+                              </div>
+                            </address>
+                          </div>
+                        </div>
+                      </div>
+                      <hr />
 
-    <hr />
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 offset-md-2">
-          <h2 class="text-center">Contáctanos</h2>
-          <address>
-            <div class="col-md-8 offset-md-2">
-              <strong>Shibuya Sushi Co.</strong><br />
-              Centro Comercial 2001, Cd. Satélite, Méx.<br />
-              ZAC, MX<br />
-              <abbr title="Phone">Tel:</abbr> (492) 224-1409
+                      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                    </div>
+                  </section>
+                </div>
+              </section>
             </div>
-          </address>
+          </section>
         </div>
-      </div>
+      </main>
     </div>
-    <hr />
-    
-
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <!--script src="js/jquery-3.4.1.min.js"></script>
-    < Include all compiled plugins (below), or include individual files as needed >
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap-4.4.1.js"></script>
-    <script src="js/main.js"></script-->
   </body>
 </html>
